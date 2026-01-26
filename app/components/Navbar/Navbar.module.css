@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: var(--background-3);
+    height: 544px;
+    width: 128px;
+    border-radius: 48px;
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox, .timer, .pomodoro, .home{
+    height: 64px;
+    width: 64px;
+    scale: 1;
+    transition: all 0.1s ease-out;
+}
+
+.checkbox:hover, .timer:hover, .pomodoro:hover, .home:hover{
+    scale: 1.1;
+    transition: all 0.1s ease-in;
+}

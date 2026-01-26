@@ -1,0 +1,146 @@
+.todo{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 0 20vw;
+
+    align-items: flex-start;
+
+    gap: 24px;
+}
+
+.trashcan{
+    height: 32px;
+    width: 32px;
+
+    margin-top: 10px;
+
+    margin-right: 1.5vw;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.trashcan:hover{
+    scale: 1.1;
+    /* background-color: var(--primary-1);
+    border-radius: 48px; */
+    transition: all 0.2s ease-in-out;
+}
+
+.add{
+    height: 32px;
+    width: 32px;
+
+    margin-top: 10px;
+
+    margin-right: 1.5vw;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.add:hover{
+    scale: 1.1;
+    /* background-color: var(--primary-3);
+    border-radius: 48px; */
+    transition: all 0.2s ease-in-out;
+}
+
+.checkbox{
+    height: 48px;
+    width: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.checkbox:hover{
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+}
+
+.checkboxImage{
+    height: 48px;
+    width: 48px;
+}
+
+.description{
+    margin-top: 3px;
+    color: var(--text-1);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.date{
+    color: var(--text-2);
+    font-size: 24px;
+    font-weight: 500;
+
+    margin-top: 10px;
+}
+
+.input {
+  width: 100%;
+  width: 24vw;
+
+  font-family: 'Quicksand', system-ui, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+
+  color: var(--text-2);
+
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--text-2);
+
+  outline: none;
+
+  padding: 6px 2px 4px 2px;
+
+  letter-spacing: 0.5px;
+
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.input::placeholder {
+  color: var(--text-2);
+  font-weight: 400;
+}
+
+.input:focus {
+  border-bottom-color: var(--text-1); /* soft accent */
+  color: var(--text-1);
+}
+
+.priorityTag{
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.priorityTag:hover{
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+}
+
+.priorityOption{
+    margin-top: 5px;
+
+    cursor: pointer;
+
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.priorityOption:hover{
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+

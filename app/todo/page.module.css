@@ -1,0 +1,116 @@
+.header{
+    color: var(--text-1);
+    font-size: 64px;
+
+    margin: 12vh 0 0 20vw;
+
+}
+
+.notext{
+    color: var(--text-2);
+    font-size: 24px;
+
+    margin: 2vh 0 0 20.5vw;
+}
+
+.addtodo{
+    background-color: var(--accent-2);
+    color: var(--text-1);
+    height: 48px;
+    width: 128px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 48px;
+
+    cursor: pointer;
+
+    margin: 4vh 0 0 20.5vw;
+
+    transition: all 0.1s ease-out;
+}
+
+.addtodo:hover{
+    scale: 1.02;
+    transition: all 0.1s ease-in;
+}
+
+/* ===== ADD TODO MENU ===== */
+
+.todoMenu{
+    position: fixed;
+    right: 2vw;
+    bottom: 2vh;
+
+    width: 320px;
+    padding: 24px;
+
+    background-color: #efe7ff;
+    border-radius: 24px;
+
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+
+    transform: translateY(150%);
+    opacity: 0;
+
+    transition: all 0.25s ease;
+}
+
+.menuOpen{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.menuTitle{
+    font-size: 18px;
+    color: var(--text-1);
+    margin-bottom: 6px;
+}
+
+.menuInput{
+    width: 100%;
+    height: 42px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+
+    padding: 0 12px;
+    margin-bottom: 16px;
+
+    font-size: 14px;
+}
+
+.priorityRow{
+    display: flex;
+    gap: 12px;
+    margin: 8px 0 20px 0;
+    cursor: pointer;
+}
+
+.menuActions{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.cancelBtn{
+    background: transparent;
+    border: none;
+    color: var(--text-2);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.addBtn{
+    background-color: var(--accent-2);
+    border: none;
+    color: var(--text-1);
+
+    padding: 10px 20px;
+    border-radius: 999px;
+
+    cursor: pointer;
+    font-size: 14px;
+}
+

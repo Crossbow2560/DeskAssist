@@ -1,0 +1,31 @@
+.tag{
+    height: 40px;
+    width: 144px;
+
+    color: var(--text-1);
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 48px;
+
+    font-weight: 600;
+}
+
+.none{
+    background-color: var(--primary-2);
+}
+
+.low{
+    background-color: var(--primary-3);
+}
+
+.high{
+    background-color: var(--primary-1);
+}
+
+.medium{
+    background-color: var(--accent-3);
+}
