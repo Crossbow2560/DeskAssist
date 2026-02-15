@@ -1,0 +1,64 @@
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  height: 88px;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 100;
+  position: fixed;
+}
+
+.optionsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+  width: 45%;
+}
+
+.logo {
+  color: var(--forest-green);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 2%;
+}
+
+.optionsContainer {
+  color: var(--text-primary);
+  font-size: 1.75rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.optionsContainer > * {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  color: var(--forest-green);
+}
+
+.optionsContainer > *:hover {
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+}
+
+.signUpButton {
+  height: 56px;
+  width: 142px;
+  border: 2px solid var(--forest-green);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signUpButton > * {
+  text-decoration: none;
+  color: var(--forest-green);
+}

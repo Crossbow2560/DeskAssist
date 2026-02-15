@@ -1,0 +1,19 @@
+.mainContent {
+  margin-left: 12%;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 3% 3%;
+  box-sizing: border-box;
+  z-index: 50;
+}
+
+.mainContent > * {
+  z-index: 50;
+}
+
+.header {
+  font-size: 3rem;
+  color: var(--forest-green);
+  font-weight: 700;
+}

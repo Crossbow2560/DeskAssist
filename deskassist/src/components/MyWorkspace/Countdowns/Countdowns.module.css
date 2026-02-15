@@ -1,0 +1,29 @@
+.buttons{
+  margin-top: 6%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+}
+
+.button {
+  background-color: var(--forest-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.activeButton{
+  background-color: var(--forest-green);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  opacity: 0.5;
+}

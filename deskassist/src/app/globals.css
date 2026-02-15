@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+    format("truetype-variations");
+  src: url("/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf")
+    format("truetype") tech("variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf")
+    format("truetype-variations");
+  src: url("/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT,WONK,opsz,wght.ttf")
+    format("truetype") tech("variations");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nobile";
+  src: url("/fonts/Nobile/Nobile-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nobile";
+  src: url("/fonts/Nobile/Nobile-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nobile";
+  src: url("/fonts/Nobile/Nobile-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  /* 🧈 Creams (backgrounds & spacing) */
+  --soft-cream: #f6f5f1;
+  --warm-ivory: #efede6;
+  --linen-cream: #e8e5dc;
+
+  /* 🌱 Sage Greens (primary actions & highlights) */
+  --classic-sage: #9faf9b;
+  --soft-sage: #b8c6b1;
+  --pale-sage: #d4ded0;
+
+  /* 🌲 Dark Greens (focus & contrast) */
+  --forest-green: #2f4f3e;
+  --deep-moss-green: #3a5f4b;
+  --olive-shadow: #4b5e4a;
+
+  /* 🖋 Text Colors (optimized for productivity) */
+  --text-primary: #2b2b2b;
+  --text-secondary: #5f5f5f;
+  --text-muted: #8a8a8a;
+
+  /* Semantic Color Mappings */
+  --bg-primary: var(--soft-cream);
+  --bg-secondary: var(--warm-ivory);
+  --bg-elevated: var(--linen-cream);
+
+  --primary: var(--classic-sage);
+  --primary-hover: var(--soft-sage);
+  --primary-border: var(--pale-sage);
+
+  --accent: var(--deep-moss-green);
+  --accent-dark: var(--forest-green);
+  --accent-subtle: var(--olive-shadow);
+
+  /* UI Element Colors */
+  --border-color: var(--pale-sage);
+  --border-color-dark: var(--olive-shadow);
+
+  --btn-primary-bg: var(--deep-moss-green);
+  --btn-primary-text: #ffffff;
+  --btn-primary-hover: var(--forest-green);
+
+  --btn-secondary-bg: var(--soft-sage);
+  --btn-secondary-text: var(--text-primary);
+  --btn-secondary-hover: var(--classic-sage);
+
+  --btn-outline-border: var(--pale-sage);
+  --btn-outline-text: var(--text-primary);
+  --btn-outline-hover: var(--soft-cream);
+
+  --card-bg: var(--linen-cream);
+  --card-border: var(--pale-sage);
+  --card-shadow: rgba(47, 79, 62, 0.08);
+
+  --nav-bg: var(--forest-green);
+  --nav-text: #ffffff;
+  --nav-hover: var(--deep-moss-green);
+
+  --input-bg: #ffffff;
+  --input-border: var(--pale-sage);
+  --input-border-focus: var(--soft-sage);
+  --input-placeholder: var(--text-muted);
+
+  --link-color: var(--deep-moss-green);
+  --link-hover: var(--forest-green);
+
+  --success: var(--classic-sage);
+  --warning: #e6b95c;
+  --error: #d66d6d;
+  --info: var(--pale-sage);
+
+  /* Typography */
+  --font-family-base:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --font-family-heading: var(--font-family-base);
+  --font-family-mono: "SF Mono", "Roboto Mono", "Courier New", monospace;
+
+  --font-nobile: "Nobile", serif;
+  --font-fraunces: "Fraunces", serif;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxl: 3rem; /* 48px */
+
+  /* Border Radius */
+  --radius-sm: 0.25rem; /* 4px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+  --radius-round: 50%;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(47, 79, 62, 0.05);
+  --shadow-md: 0 4px 6px rgba(47, 79, 62, 0.07);
+  --shadow-lg: 0 10px 15px rgba(47, 79, 62, 0.1);
+  --shadow-xl: 0 20px 25px rgba(47, 79, 62, 0.12);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 350ms ease;
+
+  /* Z-index Layers */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal-backdrop: 1040;
+  --z-modal: 1050;
+  --z-popover: 1060;
+  --z-tooltip: 1070;
+
+  /* Breakpoints */
+  --breakpoint-xs: 480px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-xxl: 1536px;
+}
+
+body,
+html {
+  font-family: "Fraunces", serif;
+  background-color: var(--soft-cream);
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  user-select: none;
+}

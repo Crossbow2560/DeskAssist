@@ -1,0 +1,40 @@
+.container {
+  background-color: var(--linen-cream);
+  border-radius: 48px;
+  height: auto;
+  width: 100%;
+  margin: 5% 0;
+  box-sizing: border-box;
+  padding: 3% 5%;
+}
+
+.header {
+  font-size: 2rem;
+  color: var(--forest-green);
+  font-weight: 600;
+}
+
+.waiting {
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metricItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.metricKey {
+  color: #aaa;
+}
+
+.metricValue {
+  font-weight: bold;
+}

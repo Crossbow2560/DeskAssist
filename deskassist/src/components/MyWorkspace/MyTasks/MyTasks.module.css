@@ -1,0 +1,49 @@
+.tasksContainer {
+  background-color: var(--linen-cream);
+  border-radius: 48px;
+  height: 100%;
+  width: 100%;
+  margin: 5% 0;
+  box-sizing: border-box;
+  padding: 3% 5%;
+}
+
+.taskHeader {
+  font-size: 2rem;
+  color: var(--forest-green);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.taskItem {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 2% 0;
+  align-items: center;
+}
+
+.checkboxChecked {
+  width: 40px;
+  height: 40px;
+}
+
+.checkboxEmpty {
+  width: 30px;
+  height: 30px;
+}
+
+.taskTitleChecked,
+.taskTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.taskTitleChecked {
+  color: var(--text-secondary);
+  text-decoration: line-through;
+}
+
+.taskTitle {
+  margin-left: 1.5%;
+}

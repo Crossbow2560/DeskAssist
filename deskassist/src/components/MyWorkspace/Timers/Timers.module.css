@@ -1,0 +1,39 @@
+.container {
+  background-color: var(--linen-cream);
+  border-radius: 48px;
+  height: 30%;
+  width: 100%;
+  margin: 5% 0;
+  box-sizing: border-box;
+  padding: 3% 5%;
+}
+
+.header {
+  font-size: 2rem;
+  color: var(--forest-green);
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.buttons > * {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttons > *:hover {
+  opacity: 1;
+}
+
+.timer {
+  margin: 1rem 0;
+  font-size: 3rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  font-family: var(--font-nobile);
+}

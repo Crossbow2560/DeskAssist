@@ -1,0 +1,46 @@
+.sidebarContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--linen-cream);
+  height: 100vh;
+  width: 12%;
+  box-sizing: border-box;
+  padding: 16px 5px;
+  gap: 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  color: var(--forest-green);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.menuContainer > * {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 16px;
+  opacity: 0.8;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+.menuContainer > *:hover {
+  opacity: 1;
+  scale: 1.05;
+  color: var(--forest-green);
+}
